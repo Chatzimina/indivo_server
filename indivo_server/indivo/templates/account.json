@@ -1,4 +1,0 @@
-{% spaceless %}
-{% load template_utils %}
-{% include "_account.json" %}
-{% endspaceless %}

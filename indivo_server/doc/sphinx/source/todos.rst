@@ -1,4 +1,0 @@
-Unimplemented API Calls
-=======================
-
-.. todolist::

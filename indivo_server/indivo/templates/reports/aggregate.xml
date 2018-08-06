@@ -1,3 +1,0 @@
-{% load template_utils %}
-<AggregateReport xmlns="http://indivo.org/vocab/xml/documents#" value="{{ fobj.aggregate_value }}" {% for key, value in fobj.items %}{% if key != 'aggregate_value' %}group="{{ value }}"{% endif %}{% endfor %}
-/>
