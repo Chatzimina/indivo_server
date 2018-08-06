@@ -1,0 +1,20 @@
+{% load template_utils %}
+{
+    "Account id": "{{ account.email }}",
+      {% if account.secondary_secret %}      "secret": "{{account.secondary_secret}}",      {% endif %} 
+     "fullName": "{{account.full_name}}",
+      "contactEmail": "{{account.contact_email}}",
+      "lastLoginAt": "{{account.last_login_at|format_iso8601_datetime}}",   
+    "totalLoginCount": "{{account.total_login_count}}",  
+    "failedLoginCount": "{{account.failed_login_count}}",    
+    "state": "{{account.state}}", 
+    "role":"{{account.role}}", 
+    "cancerDisease":"{{account.cancerDisease}}",
+    "placeOfResidence":"{{account.placeOfResidence}}",
+    "sharingPreferences":"{{account.sharingPreferences}}",
+    "pilot":"{{account.pilot}}",
+   "lastStateChange": "{{account.last_state_change|format_iso8601_datetime}}"  
+    {% for auth_system in auth_systems %}   
+    ,"authSystem name":"{{ auth_system.auth_system.short_name}}",    
+   "username":"{{auth_system.username}}"{% endfor %} 
+}    

@@ -1,0 +1,7 @@
+{% spaceless %}
+  {% for account in accounts %}
+    
+    {% include "_account.json" %}
+  {% endfor %}
+{% endspaceless %}
+

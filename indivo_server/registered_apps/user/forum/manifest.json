@@ -1,0 +1,17 @@
+{
+  "name" : "Forum",
+  "description" : "Forum",
+  "author" : "Maria Evangelia Chatzimina",
+  "id" : "forum@apps.indivo.org",
+  "version" : "1.0.0",
+  "smart_version": "0.4",
+
+  "mode" : "ui",	
+  "scope": "record",
+  "has_ui": true,
+  "frameable": true,
+
+  "icon" :  "/jmvc/ui/resources/images/app_icons_32/forum2.png",
+  "index":  ":8004/logintest.php?record={record_id}",
+  "oauth_callback_url": "/apps/psyche/after_auth"
+}

@@ -1,0 +1,17 @@
+{
+  "name" : "Administrator Contact",
+  "description" : "A form to communicate with an administrator only available for researchers.",
+  "author" : "Chatzimina Maria Evangelia",
+  "id" : "contactadmin@apps.indivo.org",
+  "version" : "1.0.0",
+  "smart_version": "0.4",
+
+  "mode" : "ui",	
+  "scope": "record",
+  "has_ui": true,
+  "frameable": true,
+
+  "icon" :  "/jmvc/ui/resources/images/app_icons_32/contact.png",
+  "index": "/apps/contactadmin/start_auth?record_id={record_id}&amp;carenet_id={carenet_id}",
+  "oauth_callback_url": "/apps/contactadmin/after_auth"
+}

@@ -1,0 +1,17 @@
+{
+  "name" : "Profiler",
+  "description" : "Assess graphically the psycho-emotional patient profile. ",
+  "author" : "Maria Evangelia Chatzimina",
+  "id" : "profiler@apps.indivo.org",
+  "version" : "1.0.0",
+  "smart_version": "0.4",
+
+  "mode" : "ui",	
+  "scope": "record",
+  "has_ui": true,
+  "frameable": true,
+
+  "icon" :  "/jmvc/ui/resources/images/app_icons_32/profiler.png ",
+  "index": "/forth/questionnaires/profiler.php?record_id={record_id}",
+  "oauth_callback_url": "/apps/IndivoSemanticSearch/after_auth"
+}

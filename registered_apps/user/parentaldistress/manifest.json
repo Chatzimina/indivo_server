@@ -1,0 +1,17 @@
+{
+  "name" : "Parental Distress",
+  "description" : "Questionnaires used to monitor psychological, cognitive, emotional and psychosocial aspects.",
+  "author" : "Maria Evangelia Chatzimina",
+  "id" : "pdq@apps.indivo.org",
+  "version" : "1.0.0",
+  "smart_version": "0.4",
+
+  "mode" : "ui",	
+  "scope": "record",
+  "has_ui": true,
+  "frameable": true,
+
+  "icon" :  "/jmvc/ui/resources/images/app_icons_32/Questionnaire2.png",
+  "index":  "/forth/questionnaires/pdq.html?record_id={record_id}",
+  "oauth_callback_url": "/apps/pdq/after_auth"
+}

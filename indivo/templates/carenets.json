@@ -1,0 +1,19 @@
+{% spaceless %}
+{% if carenets %}
+{
+  "Carenets": {
+    "record_id": "{{ record.id }}",
+    "Carenet": [{}
+    {% for carenet in carenets %}
+
+      ,{
+        "id": "{{ carenet.id }}",
+        "name": "{{ carenet.name }}",
+        "mode": "explicit"
+      }
+    {% endfor %}
+    ]
+  }
+}
+{% endif %}
+{% endspaceless %}

@@ -1,0 +1,17 @@
+{
+  "name" : "Procedures",
+  "description" : "View and update medical treatments or operations of the patient.",
+  "author" : "Chatzimina Maria, FORTH-ICS",
+  "id" : "procedures@apps.indivo.org",
+  "version" : "1.0.0",
+  "smart_version": "0.4",
+
+  "mode" : "ui",	
+  "scope": "record",
+  "has_ui": true,
+  "frameable": true,
+
+  "icon" :  "/jmvc/ui/resources/images/app_icons_32/procedures2.png",
+  "index": "/apps/procedures/start_auth?record_id={record_id}&amp;carenet_id={carenet_id}",
+  "oauth_callback_url": "/apps/procedures/after_auth"
+}

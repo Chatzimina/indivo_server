@@ -1,0 +1,3 @@
+from old_style_integration import OldStyleIntegrationTests
+from pluggable_schemas import PluggableSchemaIntegrationTests
+from preferences import UserPreferencesIntegrationTests

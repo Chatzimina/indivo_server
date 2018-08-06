@@ -1,0 +1,17 @@
+{
+  "name" : "Edit demographics",
+  "description" : "Edit demographics",
+  "author" : "Maria Evangelia Chatzimina, ICS-FORTH",
+  "id" : "editDemographics@apps.indivo.org",
+  "version" : "1.0.0",
+  "smart_version": "0.4",
+
+  "mode" : "ui",	
+  "scope": "record",
+  "has_ui": true,
+  "frameable": true,
+
+  "icon" :  "/jmvc/ui/resources/images/app_icons_32/editDemographics.png",
+  "index": "/apps/editDemographics/start_auth?record_id={record_id}&amp;carenet_id={carenet_id}",
+  "oauth_callback_url": "/apps/editDemographics/after_auth"
+}
